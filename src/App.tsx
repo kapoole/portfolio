@@ -1,15 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
 
 function App() {
+
   return (
-    <div class="min-h-screen bg-gray-100">
+    <div>
       <h1 className="text-3xl font-bold underline">
         Hello world!
       </h1>
+      <p>Testing</p>
     </div>
-    
-  );
+  )
 }
 
-export default App;
+export default App
