@@ -1,21 +1,30 @@
-import LycaonImg from './images/lycaon.png'
+import * as imagesObject from './images/'
 
-const Lycaon = LycaonImg;
+type ImagesType = {
+  [key: string]: string;
+};
+
+const images: ImagesType = imagesObject;
+
+type ProjectProps = {
+  projectName: string
+  imageName: string;
+}
 
 
-export const Product = () => {
+export const Project = ({projectName, imageName}: ProjectProps) => {
     return (
-        <div className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-lg">
+        <div className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-lg hover:shadow-xl">
 
         <a href="#">
                 <img alt="A Medium Metamorphosis | Image"
-                  src={Lycaon}
+                  src= {images[imageName]}
                   className="h-56 w-full object-cover" />
 
                 <div className="p-4 sm:p-6">
                   <a href="#">
                     <h3 className="text-lg font-medium text-gray-900">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      {projectName}
                     </h3>
                   </a>
 

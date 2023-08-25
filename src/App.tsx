@@ -1,4 +1,4 @@
-import { Product } from './Product';
+import { Project } from './Project';
 
 function App() {
 
@@ -48,16 +48,9 @@ function App() {
 
         <section className="flex-1 mt-8">
           <div className="px-8 sm:px-16 lg:px-24 mt-8 sm:mt-16 lg:mt-2 grid grid-cols-3 gap-8">
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-            <Product />
+            <Project projectName="Hello" imageName='Lycaon'/>
+            <Project projectName="World" imageName='Lycaon'/>
+            
            
             
             
